@@ -26,6 +26,11 @@
 
 .App-body {
   background-color: #282c34;
+  background-image: url('../public/react-icon-large.png');
+  background-position: calc(+37.5vw + 50%) center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 25%;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -71,17 +76,26 @@ li::marker {
 }
 
 .nav-items {
-  list-style: none;
   display: flex;
 }
 
 .nav > h3, nav > h4 {
   margin: 0;
+  justify-content: center;
 }
 
 .nav > h3 {
-  margin-right:auto;
+  margin-right: auto;
+  margin-left: 5px;
   color:#61dafb
+}
+
+.list-items {
+  max-width: 850px;
+}
+
+.list-items > li {
+  padding-block: 10px;
 }
 
 * {
